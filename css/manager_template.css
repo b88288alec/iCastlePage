@@ -1,0 +1,15 @@
+.nav {
+    font-weight:bold;
+}
+
+.form-control, .form-group .form-control {
+    background-image:linear-gradient(#FF5722, #FF5722), linear-gradient(#4CAF50, #4CAF50)
+}
+/*網頁字體及底色*/
+body {
+    background-color: #FAFAFA;
+    font-family: 'Microsoft JhengHei';
+}
+/*網頁字體及底色結束*/
+
+

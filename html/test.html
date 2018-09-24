@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" id="add">
+        <i class="material-icons">add</i>
+    </button>
+    <div id="container" />
+    <div id="mydiv">
+        
+    </div>
+</body>
+<script>
+    
+
+    $(function () {
+        $('#add').click(function () {
+            var mydiv = $('#mydiv')
+            var labelr = $('<label></label>').addClass("mdl-radio mdl-js-radio mdl-js-ripple-effect").attr("for", "option-2");
+            var inputr = $('<input/>').addClass("mdl-radio__button").attr({ name: "options", value: "1", type: "radio", id: "option-2" });
+            var spanr = $('<span></span>').addClass("mdl-radio__label").text("Second");
+            labelr.append([inputr, spanr]);
+            mydiv.append(labelr);
+            console.log(labelr.get());
+            componentHandler.upgradeDom();
+        })
+        
+    })
+</script>
+</html>
